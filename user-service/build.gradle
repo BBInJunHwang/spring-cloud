@@ -4,5 +4,8 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
 
-
+    implementation 'io.micrometer:micrometer-tracing-bridge-brave'
+    implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'io.github.openfeign:feign-micrometer' // feign 통신시 zipkin이 추적하기 위한 의존성
 }

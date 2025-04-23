@@ -4,6 +4,24 @@ server:
 spring:
   application:
     name: user-service
+  cloud:
+    openfeign:
+      micrometer:
+        enabled: true
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      type: b3
+    brave:
+      span-joining-supported: true
+    baggage:
+      enabled: true
+  zipkin:
+    tracing:
+      endpoint: "http://localhost:9411/api/v2/spans"
 
 eureka:
   client:
