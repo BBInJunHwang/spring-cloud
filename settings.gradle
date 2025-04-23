@@ -1,4 +1,4 @@
-rootProject.name = 'springcloud'
+rootProject.name = 'spring-cloud'
 
 include ':eureka-server'
 include ':api-gateway'
