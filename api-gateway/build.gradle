@@ -7,4 +7,7 @@ dependencies {
     implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'io.github.openfeign:feign-micrometer'
+
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+
 }
